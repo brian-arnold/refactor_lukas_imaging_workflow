@@ -11,5 +11,5 @@
 source ~/miniforge3/etc/profile.d/conda.sh
 conda activate ZZ_calcium
 
-
-python analysis_pipeline_orco_partRegisterMovie.py
+# after python script, enter name of sample
+python analysis_pipeline_orco_partRegisterMovie.py F4

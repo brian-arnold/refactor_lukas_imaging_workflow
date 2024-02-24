@@ -13,7 +13,7 @@ from collections import OrderedDict
 import nrrd
 import importlib
 import datetime
-
+import sys
 
 # import the custom module
 # functions in this module are shared between different pipelines
@@ -181,8 +181,9 @@ def analysis_pipeline_orco_partRegisterMovie(option_ds, have_markes=False):
             ZZ_save_as_tiff(os.path.join(folder_final, fn_final), output_movie)
 
 def main():
+    sample = sys.argv[1]
     option_ds = {'name_dataset': '240111', 
-                'brain_names': ['240111_Camphor_1U_F1'], 
+                'brain_names': [f'240111_Camphor_1U_{sample}'], 
                 'file_ranges_spontaneous': [[1]], 
                 'file_ranges_fastZ': [range(48, 49)], 
                 'num_stacks': [22, 161], 

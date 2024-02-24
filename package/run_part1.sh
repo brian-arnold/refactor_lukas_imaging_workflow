@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH -J template
-#SBATCH -o out_part1
-#SBATCH -e err_part1
+#SBATCH -o out_part1_4
+#SBATCH -e err_part1_4
 #SBATCH --nodes=1                # node count
 #SBATCH --ntasks=1               # total number of tasks across all nodes
 #SBATCH --cpus-per-task=22        # cpu-cores per task (>1 if multi-threaded tasks)
@@ -11,5 +11,5 @@
 source ~/miniforge3/etc/profile.d/conda.sh
 conda activate ZZ_calcium
 
-
-python analysis_pipeline_orco_part1.py
+# after python script, enter name of sample
+python analysis_pipeline_orco_part1.py F4

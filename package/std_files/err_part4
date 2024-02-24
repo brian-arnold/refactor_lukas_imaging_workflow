@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/mnt/cup/labs/mcbride/bjarnold/refactor_lukas_imaging_workflow/package/analysis_pipeline_orco_martinMakeMetaFile_CMTK_hybridNewMerging.py", line 146, in <module>
+    main()
+  File "/mnt/cup/labs/mcbride/bjarnold/refactor_lukas_imaging_workflow/package/analysis_pipeline_orco_martinMakeMetaFile_CMTK_hybridNewMerging.py", line 142, in main
+    analysis_pipeline_orco_martinMakeMetaFile_CMTK_hybridNewMerging(option_ds)
+  File "/mnt/cup/labs/mcbride/bjarnold/refactor_lukas_imaging_workflow/package/analysis_pipeline_orco_martinMakeMetaFile_CMTK_hybridNewMerging.py", line 67, in analysis_pipeline_orco_martinMakeMetaFile_CMTK_hybridNewMerging
+    fn = glob.glob(os.path.join(folder_home, 'Registration', 'RegisteredMovies', datasets[bi], brains[bi], f'{brains[bi]}_{ii:05d}_*.registered.tif'))[0]
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
